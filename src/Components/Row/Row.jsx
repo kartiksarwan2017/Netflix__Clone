@@ -1,25 +1,22 @@
 import React from 'react';
 import "./Row.scss";
 import Card from "../Card/Card";
+const imgUrl = "https://image.tmdb.org/t/p/original";
 
-const Row = ({title, arr = [{
-    img: "https://marketplace.canva.com/EAFH3gODxw4/1/0/1131w/canva-black-%26-white-modern-mystery-forest-movie-poster-rLty9dwhGG4.jpg"
-}]}) => {
+const Row = ({title, arr = []}) => {
 
 
   return (
     <div className='row'>
       <h2>{title}</h2>
      
-       <div>
-           
+       <div>       
            {
-              arr.map((item) => (
-                <Card img={item.img} />
+              arr.map((item, index) => (
+                <Card key={index} img={`${imgUrl}/${item.poster_path}`} />
             ))
             
-            }
-          
+            }   
        </div>
     </div>
   )
