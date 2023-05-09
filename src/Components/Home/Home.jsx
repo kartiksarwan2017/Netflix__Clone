@@ -64,7 +64,7 @@ data from the API */
       setGenre(genres);
     };
 
-    console.log(genre);
+
 
     getAllGenre();
 
@@ -85,10 +85,9 @@ data from the API */
       <Row title={"Top Rated"} arr={topRatedMovies} />
      
        <div className="genreBox"> 
-        {genre.map((item) => {
-   
+        {genre.map((item) => (
           <Link key={item.id} to={`/genre/${item.id}`}>{item.name}</Link>
-        })}
+        ))}
        </div>
       
     
