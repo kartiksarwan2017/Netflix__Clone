@@ -28,7 +28,10 @@ $bg: rgb(16, 16, 16);
     color: white;
     font-size: 2rem;
     cursor: pointer;
+
+    /* This hover will be applicable to current svg only not on all the svg */
+    &:hover {
+      color: rgb(216, 216, 216);
+    }
   }
-
-
 }

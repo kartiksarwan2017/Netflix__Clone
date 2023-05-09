@@ -15,9 +15,9 @@ const Header = () => {
 
       <div>
         <Link to="/tvshows">TV Shows</Link>
-        <Link to="/tvshows">Movies</Link>
-        <Link to="/tvshows">Recently Added</Link>
-        <Link to="/tvshows">My List</Link>
+        <Link to="/movies">Movies</Link>
+        <Link to="/recent">Recently Added</Link>
+        <Link to="/mylist">My List</Link>
       </div>
 
        <ImSearch />
